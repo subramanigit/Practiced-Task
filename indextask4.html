@@ -1,0 +1,604 @@
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My very first html structure</title>
+    <link href="css/style.css" rel="stylesheet">
+    <meta
+      name="description"
+      content="Hypertext Markup Language- Code to structure a webpage and its content"
+    />
+    <meta
+      name="keywords"
+      content="content,html,script,basics,attributes,elements,tags"
+    
+    />
+    <style>
+      
+
+
+   
+      .container {
+        position:relative
+      }
+      
+
+      .hamburger {
+        position: absolute;
+        top: 8%;
+        left: 93%;
+        transform: translate(-50%, -50%);
+      }
+
+      .bgimgcontent {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        font-size: 12px;
+        font-weight: bold;
+        color:black;
+        line-height: 2;
+         }
+      
+      .button1 {
+        background-color: white;
+        padding:10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius:100px;
+        color:black; 
+        margin-top: 20px;
+      }
+
+
+      #bgimgsize {
+        width:100%;
+        height:500px;
+        object-fit:cover;
+        
+      }
+
+
+    .overlay {
+     height: 100%;
+     width: 100%;
+     display: none;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background-color: rgb(0,0,0);
+     background-color: rgba(0,0,0, 1);
+     
+     
+    }
+
+    .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    
+    }
+
+    .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    }
+
+    .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+     }
+
+    .overlay .closebtn {
+     position: absolute;
+     top: 20px;
+     right: 45px;
+     font-size: 60px;
+    }
+
+    .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+     }
+
+    .overlay .closebtn {
+     position: absolute;
+     top: 20px;
+     right: 45px;
+     font-size: 60px;
+    }
+
+
+    .content {
+        width:100%;
+        background-color: white;
+        font-size:25px;
+        
+       }
+      
+    .contentbox {
+        margin:30px 180px;
+        box-sizing:border-box;
+        
+    }
+
+    .layer1 {
+        width:100%;
+        background-color: #FFD580;
+        display: flex;
+        justify-content: center;
+        color:white;
+        font-weight:bold;
+        
+    }
+
+    .imgtext {
+      margin-top:80px;
+      margin-left:205px;
+      
+    }
+
+    .imgtext1 {
+      margin-top:80px;
+      margin-left:205px;
+      
+    }
+
+    .fullimg {
+      display:flex;
+      justify-content:center; 
+    }
+
+    .gallery {
+     
+     margin-left: 15px;
+     border: 1px solid #ccc; 
+     width: 300px;
+     position:relative; 
+    }
+
+    .gallery:hover {
+     border: 1px solid #777;
+    }
+
+    .gallery img {
+     width: 100%;
+     height: 200px;
+    }
+
+    .desc {
+  
+    text-align: left;
+    background-color: #FFD580;
+    padding: 5px;
+    color:white;
+    padding:10px 20px;
+  
+    }
+
+
+.gallery .centered {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    padding:8px;
+    background-color:orange;
+    border-radius:100px;
+    font-size:15px;
+}
+
+
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 10%; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  
+}
+    
+.modal .content {
+  border: 1px solid black;
+  width : 70%;
+  margin-left:15%;
+  height:auto;
+  background-color: white;
+}
+
+.modal .gallery1 {
+     
+     max-width: 250px;
+     max-height: 250px;
+     
+}
+
+.modal .desc1 {
+  position:absolute;
+  top: 35%;
+  left: 59.7%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  color:black;
+  
+
+  }
+
+
+  .modal .centered1 {
+    position: absolute;
+    top: 25%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    padding:8px;
+    background-color:orange;
+    border-radius:100px;
+    font-size:15px;
+}
+
+.modal .close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left:15%;
+}
+
+
+
+.fullimg1 {
+      display:flex;
+      justify-content:center;    
+    }
+
+.headphonegallery {
+  margin-left: 8px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  width: 225px;
+}
+
+.headphonegallery:hover {
+  border: 1px solid #777;
+}
+
+.headphonegallery img {
+  width: 100%;
+  height: auto;
+}
+
+.layer2 {
+        width:100%;
+        margin-top:30px;
+        background-color: #FFD580;
+        display: flex;
+        justify-content: center;
+        color:white;
+        font-weight:bold;
+        
+    }
+ 
+.button {
+  background-color: white; 
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius:100px;
+  color:black; 
+}
+
+.whyus1 {
+  display:flex;
+  justify-content: center;
+
+}
+
+
+
+.whyus {
+  font-size:40px;
+  font-weight:bold;
+  color:orange;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+
+.fixed-position {
+    overflow-y: hidden;
+ }
+   </style>
+   </head>
+   <body>
+     
+
+    <div class="container">
+        <img id="bgimgsize" src=".\images\bg.sony.jpg" alt="song earphone">
+        <div class="bgimgcontent">THINKING OF BUYING A HEADPHONE ?</br><span style="font-size:35px;line-height: normal;">HTML Business </br>Templates</span><br><span class="button1">Shop Now</span></div>
+        <div class="hamburger">
+          <span style="font-size:30px;cursor:pointer;margin-left:95%;" onclick="openNav()">&#9776;</span>
+          </div>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+
+    </br>
+       
+    </div>
+
+    <div>
+    <div class="content">
+      
+    <div class="contentbox">
+     <p>Find a quality and right headphones not easy</p>
+
+     <p style="font-size:15px"><b>Lorem ipsum dolor</b> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+     
+    
+    <div class="layer1">
+        <h2>Business HTML Templates Free Download</h2>
+    </div>
+
+    <h2 class="imgtext">Hottest headphones of the month</h2>
+      
+      <div class="fullimg">
+       
+        
+        <div class="gallery myBtn_multi">
+         
+          <img src=".\Images\sonyheadphones3.jpg" alt="sonyheadphone">
+          
+         <div class="centered">HEADPHONES</div>
+         <div class="desc"><span style="font-weight:bold;color:black;">HEADPHONES</span></br></br><span style="font-size: 15px">Lorem ipsum dolor sit amet. Est consequatur nemo ut similique fugit non corporis fugit et</span></div>
+        </div>
+        
+        <div class="gallery myBtn_multi">
+            
+            <img src=".\Images\sonyheadphone1.jpg" alt="sonyheadphone" >
+          
+          <div class="centered">HEADPHONES</div>
+          <div class="desc"><span style="font-weight:bold;color:black;">HEADPHONES</span></br></br><span style="font-size: 15px">Lorem ipsum dolor sit amet. Est consequatur nemo ut similique fugit non corporis fugit et.Hello </span></div>  
+        </div>
+        
+        <div class="gallery myBtn_multi">
+          
+            <img src=".\images\bg.sony.jpg" alt="sonyheadphone" >
+         
+          <div class="centered">HEADPHONES</div>
+        
+          <div class="desc"><span style="font-weight:bold;color:black;">HEADPHONES</span></br></br><span style="font-size: 15px">Lorem ipsum dolor sit amet. Est consequatur nemo ut similique fugit non corporis fugit et.Hello hello</span></div>  
+        </div>
+        
+    </div> 
+    
+  
+
+    
+
+  <div class="modal modal_multi">
+    
+      <div class="content">
+        <span class="close close_multi">&times;</span>
+        <div class="gallery1">
+        
+        <img src=".\Images\sonyheadphones3.jpg" alt="sonyheadphone" width="300" height="250">
+        
+        <div class="centered1">HEADPHONES</div>
+        <div class="desc1"><span style="font-weight:bold;color:black;">HEADPHONES</span></br></br><span style="font-size: 15px">Lorem ipsum dolor sit amet. Est consequatur nemo ut similique fugit non corporis fugit et</span></div>  
+      
+        </div>
+      </div>
+    
+  </div>
+
+  <div class="modal modal_multi">
+    
+    <div class="content">
+      <span class="close close_multi">&times;</span>
+      <div class="gallery1">
+      
+      <img src=".\Images\sonyheadphone1.jpg" alt="sonyheadphone" width="300" height="250">
+      
+      <div class="centered1">HEADPHONES</div>
+      <div class="desc1"><span style="font-weight:bold;color:black;">HEADPHONES</span></br></br><span style="font-size: 15px">Lorem ipsum dolor sit amet. Est consequatur nemo ut similique fugit non corporis fugit et.Hello</span></div>  
+    
+      </div>
+    </div>
+  
+</div>
+
+<div class="modal modal_multi">
+    
+  <div class="content">
+    <span class="close close_multi">&times;</span>
+    <div class="gallery1">
+    
+    <img src=".\Images\sonyheadphone.jfif" alt="sonyheadphone" width="300" height="250">
+    
+    <div class="centered1">HEADPHONES</div>
+    <div class="desc1"><span style="font-weight:bold;color:black;">HEADPHONES</span></br></br><span style="font-size: 15px">Lorem ipsum dolor sit amet. Est consequatur nemo ut similique fugit non corporis fugit et.Hello hello</span></div>  
+  
+    </div>
+  </div>
+
+</div>
+      
+    
+
+    
+
+    <h2 class="imgtext1">Meet Our New Headphones<span> 🔥 </span></h2>
+     
+    <div class="fullimg1">
+        <div class="headphonegallery">
+        
+          <img src=".\Images\str1.jpg" alt="sonyheadphone" >
+        
+        </div>
+      
+        <div class="headphonegallery">
+        
+          <img src=".\Images\str2.jpg" alt="sonyheadphone" >
+
+        </div>
+      
+      <div class="headphonegallery">
+        
+          <img src=".\Images\str4.jpg" alt="sonyheadphone" >
+       
+      </div>
+      
+      <div class="headphonegallery">
+        
+          <img src=".\Images\str6.jpg" alt="Mountains">
+       
+      </div>
+  </div>
+
+      <div class="fullimg1">
+        
+
+        <div class="headphonegallery">
+          
+            <img src=".\Images\str4.jpg" alt="sony earphones">
+          
+          
+        </div>
+        
+        <div class="headphonegallery" >
+          
+            <img src=".\Images\str6.jpg" alt="sony earphones">
+        
+        </div>
+        
+        <div class="headphonegallery">
+          
+            <img src=".\Images\str2.jpg" alt="sony earphones" >
+         
+        </div>
+        
+        <div class="headphonegallery">
+          
+            <img src=".\Images\str1.jpg" alt="sony earphones">
+
+        </div>
+        
+      </div>
+     
+      <div class="layer2">
+        <h2>like it? Pre-order and get a discount<span class="button" style="margin-left:250px;">Learn More</span>  </h2>   
+        
+      </div>
+
+    <div class="whyus1">
+      
+      <h2>Why do you have to buy headphones only for us ? </h2>
+
+    </div>
+    
+    <div>
+      
+      <section class="whyus">
+      <div>
+      <div>01</div>
+    
+      </div>
+      <div>02</div>
+      <div>03</div>
+      <div>04</div>
+      <section>
+      </div>
+    
+
+      <div class="layer2">
+        <h2>© Copyright | All Rights Reserved </h2>   
+        
+      </div>
+
+
+
+      <script>
+
+      function openNav() {
+      document.getElementById("myNav").style.display = "block";
+      document.body.style.setProperty('overflow-y', 'hidden');
+      }
+
+      function closeNav() {
+      document.getElementById("myNav").style.display = "none";
+      document.body.style.setProperty('overflow-y', 'visible');
+      }
+
+      var modalparent = document.getElementsByClassName("modal_multi");
+
+      var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
+
+      var span_close_multi = document.getElementsByClassName("close_multi");
+
+
+      function setDataIndex() {
+
+      for (i = 0; i < modal_btn_multi.length; i++)
+    {
+        modal_btn_multi[i].setAttribute('data-index', i);
+        modalparent[i].setAttribute('data-index', i);
+        span_close_multi[i].setAttribute('data-index', i);
+    }
+  }  
+
+    for (i = 0; i < modal_btn_multi.length; i++)
+    {
+    modal_btn_multi[i].onclick = function() {
+        var ElementIndex = this.getAttribute('data-index');
+        modalparent[ElementIndex].style.display = "block";
+    };
+
+    
+    span_close_multi[i].onclick = function() {
+        var ElementIndex = this.getAttribute('data-index');
+        modalparent[ElementIndex].style.display = "none";
+    };
+  }
+
+//window.onload = function() {
+
+    setDataIndex();
+  //};
+
+
+
+
+
+
+
+
+      </script>
+
+
+
+   </body>
+   </html>

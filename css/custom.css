@@ -1,0 +1,512 @@
+.banner {
+  position: relative;
+}
+
+.bannersize { 
+  width: 100%;
+  height: 80vh;
+  object-fit:cover;
+}
+
+.center {
+  position: absolute;
+  top: 57%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 1.1rem;
+  font-weight:bold;
+  margin-left:1%;
+}
+
+#businesstemplate {
+    margin-top:14%;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-flex;
+    background-color: #FFFFFF;
+    padding:0.7rem 1.4rem;
+    text-align:center;
+    text-decoration: none;
+    font-size: 0.rem;
+    border-radius:2.2em;
+    margin-top:5%;
+}
+
+.hamburger {
+  position: absolute;
+  top:9%;
+  left:95%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+}
+
+.content {
+  margin:5% 15% 2% 15%;
+  
+  font-size:2rem;
+  font-weight:bold;
+}
+
+.contentdes {
+  margin:0% 15% 5% 15%;
+  word-break: break-all;
+  font-size:0.9rem;
+  
+
+}
+
+
+.businesslayer {
+  width:100%;
+  height:auto;
+  background-color:#FFD580;
+  box-sizing: border-box;
+  padding : 2rem;
+  font-size:2rem;
+  font-weight:bold;
+  text-align:center;
+  color:#FFFFFF;
+}
+
+.head {
+margin: 2% 15%;
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+
+
+.headphone {
+  margin: 2% 12%;
+ 
+
+}
+
+.gallery {
+  position: relative;
+  width: 28%;
+  float: left;
+  border: 1px solid black;
+  background-color: #FFD580;
+  margin-left: 4%;
+  border: 1px solid #ccc;
+  cursor:pointer;
+
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+
+.gallery img {
+  width:100%;
+  height:200px;
+  object-fit: cover;
+ 
+}
+
+.gallery .desc {
+  padding : 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight:bold;
+ 
+}
+
+.gallery .description {
+  padding : 0.3rem 1rem;
+  font-size: 0.8rem;
+  color:white;
+}
+
+.gallery .center {
+  position:absolute;
+  top:15%;
+  left:29%;
+  transform:translate(-50%,-50%);
+  background-color:#f2b600;
+  padding: 0.4rem 0.6rem;
+  border-radius: 3rem;
+  font-size:0.8rem;
+}
+
+.clearfix {
+  clear: both;
+}
+
+
+.head1 {
+  margin: 28% 15% 1% 15%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.meetheadphones {
+  margin:0% 13%;
+}
+
+.meetheadphones .gallery {
+  width:22%;
+  margin-left : 2.5%;
+  margin-top : 2%;
+  margin-bottom : 5%;
+  float:left;
+  background-color: #f2b600;
+
+}
+
+.meetheadphones .gallery img {
+  width: 100%;
+  height: auto;
+  cursor:pointer;
+}
+
+
+
+
+
+
+
+.layer2 {
+  width:100%;
+  background-color: #FFD580;
+  display: flex;
+  justify-content: center;
+  color:white;
+  font-weight:bold;
+  font-size:2.0rem
+  
+}
+
+.button {
+background-color: white; 
+padding: 0.5rem;
+text-align: center;
+display: inline-block;
+font-size: 1.0rem;
+cursor: pointer;
+border-radius:6rem;
+color:black; 
+
+}
+
+
+.whyus1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.whyus {
+  font-size:40px;
+  font-weight:bold;
+  color:orange;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom:3%;
+}
+
+
+.overlay {
+  position: fixed;
+  display:none;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: 2 ;
+  background-color: rgba(0,0,0,1);
+  cursor:pointer;
+}
+
+.overlay-content {
+  position:absolute;
+  top:25%;
+  width:100%;
+  text-align:center;
+  margin-top:2.5rem;
+}
+
+
+.overlay a {
+  padding: 2.5 rem;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  margin-top: 2%;
+}
+
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+  .overlay .closebtn {
+    position: absolute;
+    top:9%;
+    left:95%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+
+
+.modal {
+  display:none;
+  position:fixed;
+  z-index:1;
+  padding-top: 10%; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+ 
+}
+
+.modal .content {
+  width: 70%;
+  margin-left:15.1%;
+  border:1px solid #777;
+  height:40%;
+  background-color:white;
+}
+
+.modal img {
+  width:30%;
+  height:100%;
+}
+
+.modal .description {
+  position:absolute;
+  top:40%;
+  left:45%;
+  transform:translate(-50%, -50%);
+  font-size:2rem;
+
+}
+
+.modal .description1 {
+  position: absolute;
+  top: 45%;
+  left: 52.8%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+}
+
+
+
+.modal .center {
+  position: absolute;
+  top: 33%;
+  left: 19%;
+  transform: translate(-50%,-50%);
+  background-color: #f2b600;
+  padding: 0.4rem 0.6rem;
+  border-radius: 3rem;
+  font-size: 0.8rem;
+}
+
+.modal .close {
+  position: absolute;
+  top: 33%;
+  left: 82%;
+  transform: translate(-50%,-50%);
+  color: black;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+
+  .bannersize { 
+    width: 100%;
+    height: unset;
+    object-fit:cover;
+  }
+  .center {
+    position: absolute;
+    top: 43%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 1%;
+    
+}
+  #businesstemplate {
+    margin-top: 14%;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.btn {
+  display: inline-flex;
+  background-color: #FFFFFF;
+  padding: 0.2rem 0.4rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.7rem;
+  border-radius: 2.2em;
+  margin-top: 6%;
+}
+
+.hamburger {
+  position: absolute;
+  top: 9%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+}
+.businesslayer {
+  margin-top:3%;
+  width: 100%;
+  height: auto;
+  background-color: #ffa07a;
+  box-sizing: border-box;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  
+}
+
+.content {
+  margin: 5% 12% 2% 12%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.contentdes {
+  margin: 0% 12% 5% 12%;
+  word-break: break-all;
+  font-size: 0.9rem;
+}
+
+.head {
+  margin: 4% 12%;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.headphone {
+  margin: 0% 10%;
+}
+
+.gallery {
+  position: relative;
+  width: 250px;
+  float: left;
+  margin-left: 3.4%;
+  margin-bottom: 10%;
+  border: 1px solid black;
+  background-color: #f2b600;
+}
+
+.meetheadphones .gallery {
+  width: 43%;
+  margin-left: 2.5%;
+  margin-top: 2%;
+  float: left;
+  border: 1px solid #777;
+}
+
+.layer2 {
+  width: 100%;
+  background-color: #FFD580;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.button {
+  background-color: white;
+  padding: 0.4rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.7rem;
+  cursor: pointer;
+  border-radius: 6rem;
+  color: black;
+}
+.whyus1 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.head1 {
+  margin: 28% 15% 1% 15%;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 7%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+}
+
+.modal .content {
+  width: 67%;
+  margin-left: 14.34%;
+  border: 1px solid #777;
+  height: 60%;
+  background-color: white;
+}
+
+.modal img {
+  width: 100%;
+  height: 65%;
+}
+
+.modal .center {
+  position: absolute;
+  top: 15%;
+  left: 38%;
+  transform: translate(-50%,-50%);
+  background-color: #f2b600;
+  padding: 0.4rem 0.6rem;
+  border-radius: 3rem;
+  font-size: 1.1rem;
+}
+
+.modal .description1 {
+  position: absolute;
+  top: 59%;
+  left: 46.5%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+}
+.modal .description {
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+.modal .close {
+  position: absolute;
+  position: absolute;
+  top: 12%;
+  left: 77%;
+  transform: translate(-50%,-50%);
+  color: black;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+}
+
